@@ -31,6 +31,7 @@ Properties Available :
 > - To **RECORD**
 >   
 >    ![image](https://github.com/user-attachments/assets/0faf1f0b-a3dd-4996-8117-ef8cdd9c35d1)
+>    ![image](https://github.com/user-attachments/assets/95159d44-d496-4ce5-bdcb-88053d757b9e)
 >
 >   - Timer Starts once Recording has Started.
 >   - Timer Ends once the Recording has Stopped.
