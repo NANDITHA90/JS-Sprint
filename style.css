@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0px;
+    padding-left: 10px;
+    margin:  0px;
+    background-color: rgb(253, 227, 229);
+}
+
+.heading{
+    font-family: sans-serif;
+    font-weight: 100;
+    text-align: center;
+    margin: 8px;
+}
+
+.vid-container{
+    height: 100vh;
+    width: 100vw;
+}
+
+video{
+    height: 87%;
+    width: 98%;
+    border: 5px solid black;
+}
+
+.action-cont{
+    height: 150px;
+    width: 150px;
+    /* background-color: lightblue;*/
+    position: absolute;
+    bottom: 8px;
+    right: 43%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 2;
+}
+.action-cont > * {  /*for all the things that are present in this container*/
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.record-btn{
+    background-color: red;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.capture-btn{
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.scale-record{
+    animation-name: scale-record;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+@keyframes scale-record{
+
+    0%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+
+}
+
+.scale-capture{
+    animation-name: scale-capture;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+
+@keyframes scale-capture{
+
+    0%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+
+}
+
+.timer-cont{
+    padding: 9px;
+    position: absolute;
+    /*top: calc((100vh - 16rem) / 2);*/  /*100vh - full screen, reducing 16rem and after the result we will be dividing by 2 so that it'll come to center*/
+    right: 47.2%;
+    bottom: 7%;
+    font-size: 9px;
+    color: rgb(238, 220, 196);
+    background-color: transparent;
+}
+
+.header-cont{
+    height: 3px;
+    padding: 2px;
+    position: absolute;
+    /*top: calc((100vh - 16rem) / 2);*/  /*100vh - full screen, reducing 16rem and after the result we will be dividing by 2 so that it'll come to center*/
+    right: 1%;
+    top: 5%;
+    font-size: 9px;
+    color: rgb(238, 220, 196);
+    background-color: rgb(54, 48, 48);
+}
+
+.header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.timer{
+    display: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.filter-cont{
+    height: 16rem;
+    width: 5rem;
+    position: absolute;
+    top: 35%;
+    right: 31px;
+    background-color: rgb(246, 223, 211);
+    z-index: 2;
+    
+}
+
+.filter{
+    background-image: url("https://fastly.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI");
+    height: 4rem;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 1px solid rgb(255, 255, 255);
+
+}
+
+.filter-layer{
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.orange{
+
+    background-color: rgba(231, 138, 56, 0.596);
+    background-blend-mode: color-burn;
+
+}
+
+.brown{
+
+    background-color: rgba(74, 35, 35, 0.733);
+    background-blend-mode: color-burn;
+
+}
+
+.pink{
+
+    background-color: rgba(249, 81, 123, 0.199);
+    background-blend-mode: color-burn;
+
+}
+
+.transparent{
+
+    background-color: transparent;
+    background-blend-mode: color-burn;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
